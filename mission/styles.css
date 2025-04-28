@@ -1,21 +1,24 @@
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 50px;
+    padding: 100px;
     display: flex;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     background-color: #ffffff; 
-align-content: center;}
+align-content: center;
+height: 100vh;
+}
+
 
 
 .all {
-    width: 90;
+     
     max-width: 600px;
     border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px auto;
-    
+    padding: 100px;
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
     box-sizing: border-box;
 }

@@ -65,3 +65,31 @@ h1 {
     width: 80px; 
     margin-top: 30px;
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #006EB6;
+}
+
+/* body.dark {
+    background-color: black;
+    color: white;
+}
+
+body.dark .all {
+    border-color: #444;
+}
+
+body.dark header {
+    color: #fff;
+}
+body.dark h1 {
+    color: whitesmoke
+}
+body.dark .list {
+    color: wheat;
+} */

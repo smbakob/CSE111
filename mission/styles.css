@@ -4,20 +4,23 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-size: 1.3em;
     font-family: 'Times New Roman', Times, serif;
     background-color: #ffffff; 
+    
+
 align-content: center;}
 
 
 .all {
     width: 90;
-    max-width: 600px;
+    max-width: 700px;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px auto;
-    
     text-align: center;
     box-sizing: border-box;
+    height: 800px;
 }
 
 
@@ -37,7 +40,7 @@ header {
 }
 
 h1 {
-    font-size: 0.9em;
+    font-size: 1em;
     color: #006EB6;
     letter-spacing: 3px;
     font-weight: normal;
@@ -75,21 +78,6 @@ h1 {
     color: #006EB6;
 }
 
-/* body.dark {
-    background-color: black;
-    color: white;
+.list li {
+    margin-bottom: 1.5em;
 }
-
-body.dark .all {
-    border-color: #444;
-}
-
-body.dark header {
-    color: #fff;
-}
-body.dark h1 {
-    color: whitesmoke
-}
-body.dark .list {
-    color: wheat;
-} */

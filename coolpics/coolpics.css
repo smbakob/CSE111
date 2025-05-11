@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+img{
+    max-width: 100%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+  }
+  a:link,
+  a:visited {
+    color: var(--accent-color);
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: Mooli, sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+h1, h2 {
+  font-family: var(--secondary-font);
+}
+
+a:link, a:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+button#menu {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: var(--text-light);
+  cursor: pointer;
+}
+
+#menu {
+    display: none;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+.coolpics {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    height: 200px;
+    padding: 0px;
+}
+   
+
+  
+  nav {
+    display: none;
+    background-color: var(--primary-color);
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #menu:hover + nav {
+    display: block;
+  }
+
+.nav a {
+    color: var(--text-light);
+    text-decoration: underline;
+    text-decoration-color: white;
+  }
+
+@media (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav {
+      display: block;
+    }
+    #menu {
+      display: none;
+    }
+  }

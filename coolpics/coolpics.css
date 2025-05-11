@@ -47,7 +47,7 @@ header, footer {
   background-color: var(--primary-color);
   color: var(--text-light);
   text-align: center;
-  padding: 1rem;
+  
 }
 
 h1, h2 {
@@ -123,6 +123,9 @@ button#menu {
   }
 
 .nav a {
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
     color: var(--text-light);
     text-decoration: underline;
     text-decoration-color: white;

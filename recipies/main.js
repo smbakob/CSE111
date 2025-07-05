@@ -48,7 +48,9 @@ function renderRecipes(recipeList) {
 
 function init() {
   const recipe = getRandomListEntry(recipes);
-  renderRecipes([recipe]);
+  renderRecipes(recipes);
+  const form = document.querySelector('form');
+  form.addEventListener('submit', searchHandler);
 }
 
 function filterRecipes(query) {
@@ -58,12 +60,15 @@ function filterRecipes(query) {
       return (
         recipe.name.toLowerCase().includes(lowerQuery) ||
         recipe.description.toLowerCase().includes(lowerQuery) ||
-        recipe.ingredients.find(ingredient => ingredient.toLowerCase().includes(lowerQuery)) ||
+        recipe.recipeIngredient.find(ingredient =>
+          ingredient.toLowerCase().includes(lowerQuery)
+        ) ||
         recipe.tags.find(tag => tag.toLowerCase().includes(lowerQuery))
       );
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 }
+
 
 function searchHandler(event) {
   event.preventDefault();

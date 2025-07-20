@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QuickPrep - Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="recipes.css" />
+</head>
+<body>
+
+<header>
+  <div class="theme-buttons">
+    <button id="light-mode">☀️ Light</button>
+    <button id="dark-mode">🌙 Dark</button>
+  </div>
+  <nav class="nav-links">
+    <button onclick="location.href='index.html'">Home</button>
+    <button class="active" onclick="location.href='recipes.html'">Recipes</button>
+    <button onclick="location.href='contact.html'">Contact Us</button>
+  </nav>
+</header>
+
+<main>
+  <section id="recipes-container">
+    <!-- Recipe cards inserted by JS -->
+  </section>
+
+  <div id="overlay"></div>
+  <section id="recipe-details" aria-hidden="true">
+    <button id="close-details" aria-label="Close recipe details">✖</button>
+    <h2 id="detail-name"></h2>
+    <img id="detail-image" src="" alt="" />
+    <p><strong>Rating:</strong> <span id="detail-rating"></span></p>
+    <p><strong>Ingredients:</strong></p>
+    <ul id="detail-ingredients"></ul>
+    <p><strong>Instructions:</strong></p>
+    <ol id="detail-instructions"></ol>
+  </section>
+</main>
+
+<footer>
+  <img src="logo.png" alt="QuickPrep Logo" class="footer-logo" />
+  <span>QuickPrep</span>
+  <div class="social-icons">
+    <button>🏠</button>
+    <button>⭐</button>
+    <button>📧</button>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="recipes.js"></script> <!-- Your recipe data -->
+<script src="recipes-page.js"></script> <!-- New JS for page logic -->
+</body>
+</html>

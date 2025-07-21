@@ -19,44 +19,27 @@
   </nav>
 </header>
 
+<main>
+  <section class="intro">
+    <img src="images/logo.png" alt="QuickPrep Logo" class="logo" />
+    <h1>Cook Smart, Eat Healthy</h1>
+  </section>
 
-  <main>
-    <section class="intro">
-      <img src="logo.png" alt="QuickPrep Logo" class="logo" />
-      <h1>Cook Smart, Eat Healthy</h1>
-    </section>
+  <section class="recipe-of-day">
+    <h2>Recipe of the Day</h2>
+    <div id="recipe-of-the-day" class="recipe-box"></div>
+  </section>
 
-    <section class="recipe-of-day">
-      <h2>Recipe of the Day</h2>
-      <div class="recipe-box">
-        <div class="recipe-left">
-          <h3>Avocado Toast</h3>
-          <p>⭐⭐⭐⭐☆</p>
-        </div>
-        <div class="recipe-center">
-          <img src="avocado-toast.jpg" alt="Avocado Toast" />
-        </div>
-        <div class="recipe-right">
-          <a href="recipes.html#avocado-toast">View Recipe →</a>
-        </div>
-      </div>
-    </section>
+  <section class="search-section">
+    <p>Looking for something specific?</p>
+    <input type="text" placeholder="Search recipes..." />
+  </section>
+</main>
 
-    <section class="search-section">
-      <p>Looking for something specific?</p>
-      <input type="text" placeholder="Search recipes..." />
-    </section>
-  </main>
+<script src="recipes.js"></script>
+<script src="script.js"></script>
+<div id="overlay" class="overlay"></div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle')
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark')
-    })
-  </script>
-  <script src="script.js"></script>
-  <script src="recipies.js"></script>
-  <script src="randomRecipie.js"></script>
 
 </body>
 </html>

@@ -10,65 +10,35 @@ darkModeBtn.addEventListener('click', () => {
   body.classList.add('dark-mode');
 });
 
-const container = document.getElementById('recipes-container');
-const details = document.getElementById('recipe-details');
-const overlay = document.getElementById('overlay');
-const closeBtn = document.getElementById('close-details');
 
-function getRandomRecipes(arr, count) {
-  const shuffled = [...arr].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
+document.addEventListener("DOMContentLoaded", () => {
+  const recipeBox = document.getElementById("recipe-of-the-day");
+  if (!recipeBox || !window.recipes) return;
 
-function createRecipeCard(recipe) {
-  const card = document.createElement('div');
-  card.classList.add('recipe-card');
-  card.setAttribute('tabindex', '0');
-  card.setAttribute('aria-label', `View recipe for ${recipe.name}`);
+  const randomRecipe = recipes[Math.floor(Math.random() * recipes.length)];
 
-  const img = document.createElement('img');
-  img.src = recipe.image;
-  img.alt = recipe.name;
+  recipeBox.innerHTML = `
+    <div class="recipe-left">
+      <h3>${randomRecipe.name}</h3>
+      <p>${randomRecipe.rating}</p>
+    </div>
+    <div class="recipe-center">
+      <img src="${randomRecipe.image}" alt="${randomRecipe.name}" />
+    </div>
+   
+  `;
+});
 
-  card.appendChild(img);
+document.getElementById("search-input").addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase();
+  const recipes = document.querySelectorAll(".recipe-card");
 
-  card.addEventListener('click', () => showDetails(recipe));
-  card.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      showDetails(recipe);
+  recipes.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    if (name.includes(searchValue)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
     }
   });
-
-  return card;
-}
-
-function showDetails(recipe) {
-  details.classList.add('visible');
-  overlay.classList.add('visible');
-  details.setAttribute('aria-hidden', 'false');
-
-  document.getElementById('detail-name').textContent = recipe.name;
-  const detailImage = document.getElementById('detail-image');
-  detailImage.src = recipe.image;
-  detailImage.alt = recipe.name;
-
-  document.getElementById('detail-rating').textContent = recipe.rating;
-
-  const ingredientsList = document.getElementById('detail-ingredients');
-  ingredientsList.innerHTML = '';
-  recipe.ingredients.forEach(ing => {
-    const li = document.createElement('li');
-    li.textContent = ing;
-    ingredientsList.appendChild(li);
-  });
-
-  const instructionsList = document.getElementById('detail-instructions');
-  instructionsList.innerHTML = '';
-  recipe.instructions.forEach(step => {
-    const li = document.createElement('li');
-    li.textContent = step;
-    instructionsList.appendChild(li);
-  });
-}
-
+});

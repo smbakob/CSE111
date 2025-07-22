@@ -9,14 +9,14 @@ window.recipes = [
     name: "Avocado Toast",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Whole wheat bread, ripe avocado, salt, pepper, cherry tomatoes (optional).",
-    image: "images/avocado-toast.jpg",
+    image: "images/avocado-toast.webp",
     
   },
   {
     name: "Veggie Stir-Fry",
     rating: "⭐⭐⭐⭐⭐",
     ingredients: "Mixed veggies (carrots, broccoli, bell peppers), garlic, soy sauce, olive oil, rice.",
-    image: "images/vegetable-stirfry.jpg",
+    image: "images/Vegetable-Stir-Fry_0.webp",
     
   },
   {
@@ -37,7 +37,7 @@ window.recipes = [
     name: "Baked Sweet Potato & Black Beans",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Sweet potato, black beans, cumin, chili powder, avocado or cheese (optional).",
-    image: "images/baked potato.jpg",
+    image: "images/blackBeanPotato.webp",
     
   },
   {
@@ -47,67 +47,43 @@ window.recipes = [
     image: "images/lentil.jpg",
     
   },
-  {
-    name: "Greek Yogurt Parfait",
-    rating: "⭐⭐⭐⭐☆",
-    ingredients: "Greek yogurt, granola, honey, fresh fruit.",
-    image: "images/yogurt-parfait.jpg",
-    
-  },
+
   {
     name: "Quinoa Salad",
     rating: "⭐⭐⭐⭐⭐",
     ingredients: "Quinoa, cherry tomatoes, cucumber, parsley, lemon juice, olive oil.",
-    image: "images/quinoa-salad.jpg",
+    image: "images/quinoa.jpeg",
     
   },
-  {
-    name: "Vegetable Omelette",
-    rating: "⭐⭐⭐⭐☆",
-    ingredients: "Eggs, bell peppers, onions, spinach, cheese (optional).",
-    image: "images/veggie-omelette.jpg",
-    
-  },
+
   {
     name: "Black Bean Tacos",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Black beans, taco seasoning, corn tortillas, lettuce, salsa.",
-    image: "images/black-bean-tacos.jpg",
+    image: "images/Blackbean_Tacos_full.jpg",
     
   },
   {
     name: "Banana Peanut Butter Smoothie",
     rating: "⭐⭐⭐⭐⭐",
     ingredients: "Banana, peanut butter, milk (or plant milk), honey.",
-    image: "images/banana-smoothie.jpg",
+    image: "images/banana-smoothie-recipe.webp",
     
   },
-  {
-    name: "Stuffed Bell Peppers",
-    rating: "⭐⭐⭐⭐☆",
-    ingredients: "Bell peppers, rice, black beans, tomato sauce, cheese (optional).",
-    image: "images/stuffed-peppers.jpg",
-    
-  },
+ 
   {
     name: "Whole Wheat Pasta with Marinara",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Whole wheat pasta, marinara sauce, garlic, basil, parmesan (optional).",
-    image: "images/wholewheat-pasta.jpg",
+    image: "images/whole wheat.webp",
     
   },
-  {
-    name: "Sweet Potato & Kale Hash",
-    rating: "⭐⭐⭐⭐⭐",
-    ingredients: "Sweet potatoes, kale, onion, garlic, olive oil.",
-    image: "images/sweetpotato-kale.jpg",
-    
-  },
+
   {
     name: "Cucumber & Tomato Salad",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Cucumber, tomatoes, red onion, olive oil, vinegar, salt, pepper.",
-    image: "images/cucumber-tomato-salad.jpg",
+    image: "images/tomato.webp",
     
   },
   {
@@ -117,20 +93,8 @@ window.recipes = [
     image: "images/turkey-wrap.jpg",
     
   },
-  {
-    name: "Chia Seed Pudding",
-    rating: "⭐⭐⭐⭐⭐",
-    ingredients: "Chia seeds, milk or plant milk, vanilla extract, honey, berries.",
-    image: "images/chia-pudding.jpg",
-    
-  },
-  {
-    name: "Homemade Hummus & Veggies",
-    rating: "⭐⭐⭐⭐⭐",
-    ingredients: "Chickpeas, tahini, lemon juice, garlic, olive oil, carrot sticks.",
-    image: "images/hummus-veggies.jpg",
-    
-  },
+
+ 
   {
     name: "Fruit & Nut Trail Mix",
     rating: "⭐⭐⭐⭐☆",
@@ -142,7 +106,7 @@ window.recipes = [
     name: "Baked Oatmeal Cups",
     rating: "⭐⭐⭐⭐☆",
     ingredients: "Rolled oats, milk, banana, cinnamon, baking powder, berries.",
-    image: "images/baked-oatmeal-cups-iowagrileats-11.jpgS",
+    image: "images/oatmeal.jpg",
     
   }
 ];

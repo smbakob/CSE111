@@ -4,6 +4,7 @@
   --accent1-color: #fafac6;
   --accent2-color: #fecdaa;
 }
+ @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
 .search-section {
   height: 100px;
@@ -11,7 +12,7 @@
 body {
   background-color: var(--secondary-color);
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Winky Sans, Lobster Two, sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -56,6 +57,7 @@ header {
   max-width: 500px;
   padding: 1rem;
   font-size: 1.1rem;
+  font-family:  Winky Sans, Lobster Two, sans-serif;;
   border: 2px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);

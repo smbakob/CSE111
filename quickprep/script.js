@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       <p>${randomRecipe.rating}</p>
     </div>
     <div class="recipe-center">
-      <img src="${randomRecipe.image}" alt="${randomRecipe.name}" />
+      <img class="recipe-of-day-img" src="${randomRecipe.image}" alt="${randomRecipe.name}" />
+
     </div>
    
   `;

@@ -53,9 +53,7 @@ h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
-.logo{
-  text-align: left
-}
+
 h2 {
   text-align: center;
 }
@@ -184,9 +182,13 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
-.wireframes img {
-  max-width: 400px;
-  height: auto;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px #ccc;
+.recipe-of-day-img {
+  width: 250px;             
+  height: 200px;            
+  object-fit: cover;       
+  object-position: center;  
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
